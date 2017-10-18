@@ -3,7 +3,9 @@
 
 
 #include <iostream>;
-using namespace std;
+//using namespace std;
+using std::cout;
+using std::cin;
 
 int x;
 int y;
