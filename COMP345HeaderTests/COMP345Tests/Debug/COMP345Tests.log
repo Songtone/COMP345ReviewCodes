@@ -1,4 +1,5 @@
-﻿  COMP345Tests.cpp
-c:\users\songt\source\repos\comp345tests\comp345tests\comp345tests.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  COMP345Tests.vcxproj -> C:\Users\songt\source\repos\COMP345Tests\Debug\COMP345Tests.exe
-  COMP345Tests.vcxproj -> C:\Users\songt\source\repos\COMP345Tests\Debug\COMP345Tests.pdb (Partial PDB)
+﻿  stdafx.cpp
+  COMP345Tests.cpp
+c:\users\songt\source\repos\comp34codereviews\comp345headertests\comp345tests\comp345tests.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  COMP345Tests.vcxproj -> C:\Users\songt\source\repos\COMP34CodeReviews\COMP345HeaderTests\Debug\COMP345Tests.exe
+  COMP345Tests.vcxproj -> C:\Users\songt\source\repos\COMP34CodeReviews\COMP345HeaderTests\Debug\COMP345Tests.pdb (Partial PDB)
