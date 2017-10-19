@@ -72,6 +72,7 @@ int main()
 		}
 		eyes.close();
 	}
+	cout << "I failed the test" << endl;
 
 	system("pause");
     return 0;
