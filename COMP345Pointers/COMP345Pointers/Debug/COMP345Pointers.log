@@ -1,0 +1,4 @@
+﻿  COMP345Pointers.cpp
+c:\users\songt\source\repos\comp34codereviews\comp345pointers\comp345pointers\comp345pointers.cpp(21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  COMP345Pointers.vcxproj -> C:\Users\songt\source\repos\COMP34CodeReviews\COMP345Pointers\Debug\COMP345Pointers.exe
+  COMP345Pointers.vcxproj -> C:\Users\songt\source\repos\COMP34CodeReviews\COMP345Pointers\Debug\COMP345Pointers.pdb (Partial PDB)
