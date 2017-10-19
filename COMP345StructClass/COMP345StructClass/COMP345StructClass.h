@@ -10,13 +10,6 @@ public:
 	int price;
 };
 
-class donut : public cake {//inherits from cake
-public:
-	int donutPrice;
-	int realPrice;
-	int cakePrice;
-	void getRealPrice(int cakePrice);
-};
 
 struct CDAccountV1P
 {

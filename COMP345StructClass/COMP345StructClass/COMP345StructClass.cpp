@@ -5,7 +5,9 @@
 #include <iostream>
 #include <cstring>
 #include "COMP345StructClass.h"
+#include "donut.h"
 using namespace std;
+
 
 int main()
 {
@@ -31,6 +33,10 @@ int main()
 	don.priceCalculator(cakes.numberOfCakes, cakes.numberOfCandles);//uses this function from his parent
 	don.donutPrice = 25;
 	don.getRealPrice(cakes.price);//uses a variable from the parent
+	don.numberOfCakes = 25;
+	int s = don.numberOfCakes;
+
+	cout << s << endl;
 	
 
 	system("pause");
