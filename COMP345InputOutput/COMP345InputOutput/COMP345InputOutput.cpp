@@ -30,6 +30,7 @@ int main()
 
 	cout << "The price is $" << price2 << "\n";
 
+	//WRITING
 	ofstream outputfilestream;//creates a stream
 	outputfilestream.open("test.txt");//opens or creates/open the specified text file
 	outputfilestream << "This is a test" << endl; //write this in it
@@ -42,6 +43,8 @@ int main()
 	output.close();
 	cout << "I wrote in sebstuff" << endl;
 
+
+	//READING
 	ifstream input("SebStuff.txt");//to read the file
 	if (input.is_open()) {
 		while (getline(input, line)) {//must have a string instantiated
@@ -54,6 +57,21 @@ int main()
 		cout << "cant open file" << endl;
 	}
 
+	string read;
+
+	ofstream pencil;
+	pencil.open("Writing some Stuff.txt");
+	pencil << "This is my life story. I have nothing. Feelsbadman" << endl;
+	pencil << "Tic Tac Toe" << endl;
+	pencil.close();
+
+	ifstream eyes("Writing some Stuff.txt");
+	if (eyes.is_open()) {
+		while (getline(eyes, read)) {
+			cout << read << endl;
+		}
+		eyes.close();
+	}
 
 	system("pause");
     return 0;
