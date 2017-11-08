@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "observerPatternReview", "observerPatternReview\observerPatternReview.vcxproj", "{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Debug|x64.ActiveCfg = Debug|x64
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Debug|x64.Build.0 = Debug|x64
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Debug|x86.ActiveCfg = Debug|Win32
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Debug|x86.Build.0 = Debug|Win32
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Release|x64.ActiveCfg = Release|x64
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Release|x64.Build.0 = Release|x64
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Release|x86.ActiveCfg = Release|Win32
+		{0CEA3508-BFF7-4BD4-A92A-C427DFB2C51F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {608E7D61-9675-4FBB-9ED9-27C673F6BE88}
+	EndGlobalSection
+EndGlobal
