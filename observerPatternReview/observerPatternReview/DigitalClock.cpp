@@ -3,6 +3,7 @@
 #include "ClockTimer.h"
 #include <iostream>
 
+//CONCRETE OBSERVER
 using namespace std;
 
 DigitalClock::DigitalClock() {

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Subject.h"
 #include "Observer.h"
-
+//SUBJBECT
 Subject::Subject() {
 	_observers = new list<Observer*>;
 }

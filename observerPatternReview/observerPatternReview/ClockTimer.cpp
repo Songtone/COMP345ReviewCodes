@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "ClockTimer.h"
 
+//CONCRETE SUBJECT
 ClockTimer::ClockTimer() : hour(0), minute(0), second(0) {
 
 };
