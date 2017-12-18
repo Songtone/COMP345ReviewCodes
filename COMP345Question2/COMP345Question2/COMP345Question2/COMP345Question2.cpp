@@ -12,6 +12,7 @@ private:
 	Node *head, *tail;
 public:	
 	List(const List &aList) {//part 5
+	
 		head = aList.head;
 		tail = aList.tail;
 		
@@ -95,7 +96,8 @@ public:
 		delete current;
 	}
 
-	const List operator=(List &x) {//part 4
+	const List& operator=(List &x) {//part 4
+		
 		if (this != &x) {
 			List xList;
 			Node *temp = new Node;

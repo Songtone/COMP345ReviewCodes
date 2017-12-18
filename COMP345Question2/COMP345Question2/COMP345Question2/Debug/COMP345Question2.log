@@ -1,3 +1,4 @@
 ﻿  COMP345Question2.cpp
+c:\users\seb\desktop\comp345reviewcodes\comp345question2\comp345question2\comp345question2\comp345question2.cpp(109): warning C4172: returning address of local variable or temporary: xList
   COMP345Question2.vcxproj -> C:\Users\Seb\Desktop\COMP345ReviewCodes\COMP345Question2\COMP345Question2\Debug\COMP345Question2.exe
   COMP345Question2.vcxproj -> C:\Users\Seb\Desktop\COMP345ReviewCodes\COMP345Question2\COMP345Question2\Debug\COMP345Question2.pdb (Partial PDB)
