@@ -10,22 +10,12 @@ struct Node {
 class List {
 private:
 	Node *head, *tail;
-public:
-	/*List::List(const List& aList) {
-		List newList;
-
-		Node *temp1 = new Node;
+public:	
+	List(const List &aList) {//part 5
+		head = aList.head;
+		tail = aList.tail;
 		
-		temp1 = aList.head;
-
-		while (temp1 != NULL) {
-
-			newList.createnode(temp1->data);
-			temp1->next;
-
-		}
-
-	}*/
+	}
 	friend ostream& operator<<(ostream &out, const List &l);
 	friend istream& operator>>(istream &input, List &l);
 	friend const List operator+(List &x, List &y);
@@ -177,6 +167,7 @@ const List operator+(List &x, List &y) {//part 3
 	}
 	return sumList;
 }
+
 
 int main() {
 	List obj;
