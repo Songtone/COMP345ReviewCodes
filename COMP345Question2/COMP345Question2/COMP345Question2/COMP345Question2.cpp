@@ -13,7 +13,9 @@ private:
 public:
 	friend ostream& operator<<(ostream &out, const List &l);
 	friend istream& operator>>(istream &input, const List &l);
-	friend const List operator+(List &a, List &b);
+	friend const List operator+(List &x, List &y);
+	friend const List operator=(List &a, List&b);
+
 	List() {
 		head = NULL;
 		tail = NULL;
@@ -90,7 +92,7 @@ public:
 	}
 
 };
-ostream& operator<<(ostream &output, const List &l) {
+ostream& operator<<(ostream &output, const List &l) {//part 1
 	Node *temp = new Node;
 	temp = l.head;
 	while (temp != NULL) {
@@ -99,15 +101,56 @@ ostream& operator<<(ostream &output, const List &l) {
 	}
 	return output;
 }
-istream& operator>>(istream &input, List &l) {
+istream& operator>>(istream &input, List &l) {//part 2
 	int a;
 	Node *temp = new Node;
 	input >> a;
 	l.createnode(a);
 	return input;
 }
-const List operator+(List &a, List &b) {
+const List operator+(List &x, List &y) {//part 3
+	int x_length = 0, y_length = 0;
+	Node *temp = new Node;
+	temp = x.head;
+	while (temp != NULL) {
+		x_length++;
+		temp = temp->next;
+	}
+	temp = y.head;
+	while (temp != NULL) {
+		y_length++;
+		temp = temp->next;
+	}
+	int smallestList;
+	if (x_length > y_length) {
+		smallestList = y_length;
+	}
+	else {
+		smallestList = x_length;
+	}
 
+	List sumList;
+	int sumOfLists;
+	int count = 0;
+	Node *Atemp = new Node;
+	Node *Btemp = new Node;
+
+	Atemp = x.head;
+	Btemp = y.head;
+
+	while (count < smallestList) {
+		count++;
+		sumOfLists = Atemp->data + Btemp->data;
+		sumList.createnode(sumOfLists);
+		Atemp = Atemp->next;
+		Btemp = Btemp->next;
+	}
+	return sumList;
+
+}
+const List operator=(List & a, List & b)
+{
+	return List();
 }
 int main() {
 	List obj;
