@@ -2,85 +2,61 @@
 //
 
 #include "stdafx.h"
+#include"COMP345Question3.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class MyArray {
-public:
-	MyArray();//default constructor
-	MyArray(int arrayNew[], int arrayOld[]);//constructor that takes arrays as arguments
-	MyArray(const MyArray& m);//copy constructor
+MyArray::MyArray() {//default constructor
 
-	~MyArray();//destructor
-
-	bool isInArray(int number);
-	void operator = (const MyArray &m);
-	void getArray();
-	void getSize();
-
-private:
-	int* theArray;
-	int size;
-
-};
-
-
-int main()
-{
-	MyArray();
-	system("pause");
-	return 0;
-}
-
-MyArray::MyArray() {
-	size = 0;
 	theArray = new int[size];
 
 }
-MyArray::MyArray(int array1[], int arrayOld[]) {
+MyArray::MyArray(int array1[], int a) {//parameriterized constructor
 
-	for (int i = 0; i < sizeof(array1) / sizeof(array1[0]); i++) {
+	theArray = new int[a];
+
+	for (int i = 0; i < a; i++) {
 		if (isInArray(array1[i])) {
-
-		}
-		else
-		{
-			arrayOld[size + 1] = array1[i];
+			theArray[size] = array1[i];
+			size++;
 		}
 	}
-
 }
-MyArray::MyArray(const MyArray& m) {
+MyArray::MyArray(const MyArray& m) {//copy constructor
 	theArray = m.theArray;
 	size = m.size;
 }
-MyArray::~MyArray() {
-	delete theArray;
+MyArray::~MyArray() {//deconstructor
+	cout << "Deconstructing the array" << endl;
 }
-bool MyArray::isInArray(int number) {
+bool MyArray::isInArray(int number) {//function to test if a number is already in the array
+
 	for (int i = 0; i < size; i++) {
-		if (number == theArray[i]) {
-			return true;
-			break;
-		}
-		else {
+		if (number == getArray()[i]) {
 			return false;
 		}
-
 	}
-
 }
-void MyArray::operator = (const MyArray &m) {
-	theArray = m.theArray;
-	size = m.size;
-}
-void getArray() {
-
-
-}
-void getSize() {
-
+MyArray& MyArray::operator =(const MyArray a) {//assignment operator
+	theArray = a.theArray;
+	size = a.size;
+	return *this;
 }
 
+
+
+int main() {
+	cout << "Creating statically allocated array..." << endl;
+	int sampleArray[4] = { 1, 2, 2, 4 };
+	cout << "Using constructor..." << endl;
+	MyArray anArray(sampleArray, 4);
+	cout << "Using copy constructor..." << endl;
+	MyArray *copiedArray = new MyArray(anArray);
+	cout << "Printing content of MyArray..." << endl;
+	for (int i = 0; i < copiedArray->getSize(); i++)\
+		cout << copiedArray->getArray()[i] << endl;
+	delete copiedArray;
+	int i;  cin >> i;
+}

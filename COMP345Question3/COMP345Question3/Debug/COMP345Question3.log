@@ -1,5 +1,4 @@
-﻿  stdafx.cpp
-  COMP345Question3.cpp
-c:\users\songt\desktop\comp345reviewcodes\comp345question3\comp345question3\comp345question3.cpp(74): warning C4715: 'MyArray::isInArray': not all control paths return a value
+﻿  COMP345Question3.cpp
+c:\users\songt\desktop\comp345reviewcodes\comp345question3\comp345question3\comp345question3.cpp(41): warning C4715: 'MyArray::isInArray': not all control paths return a value
   COMP345Question3.vcxproj -> C:\Users\songt\Desktop\COMP345ReviewCodes\COMP345Question3\Debug\COMP345Question3.exe
   COMP345Question3.vcxproj -> C:\Users\songt\Desktop\COMP345ReviewCodes\COMP345Question3\Debug\COMP345Question3.pdb (Partial PDB)
