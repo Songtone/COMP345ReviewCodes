@@ -1,6 +1,6 @@
 // VirtualReview.cpp : Defines the entry point for the console application.
 //
-
+//https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c
 #include "stdafx.h"
 #include <iostream>
 
